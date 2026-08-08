@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Quicksand','Trebuchet MS',sans-serif;
+}
+
+
+body{
+    background:linear-gradient(135deg,#C1DBE8,#FFF1B5);
+    color:#43302e;
+    min-height:100vh;
+}
+
+
+
+/* กล่องหลัก */
+.container{
+    width:700px;
+    max-width:90%;
+    margin:50px auto;
+    background:#fffdf7;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(67,48,46,0.15);
+}
+
+
+
+/* หัวข้อหลัก */
+h1{
+    text-align:center;
+    color:#43302e;
+    margin-bottom:25px;
+    font-size:30px;
+    font-weight:700;
+}
+
+
+
+/* หัวข้อย่อย */
+h2{
+    color:#43302e;
+    font-size:23px;
+    margin:35px 0 20px;
+    border-left:5px solid #43302e;
+    padding-left:12px;
+}
+
+
+
+/* Label */
+label{
+    display:block;
+    margin-top:16px;
+    margin-bottom:6px;
+    font-weight:600;
+    color:#5a403c;
+}
+
+
+
+/* ช่องกรอกข้อมูล */
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd2c8;
+    border-radius:15px;
+    font-size:15px;
+    background:#fffaf0;
+    transition:0.3s;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#43302e;
+    background:white;
+    box-shadow:0 0 8px rgba(67,48,46,0.15);
+}
+
+
+
+/* Radio */
+.radio-group{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:10px;
+}
+
+
+.radio-group label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:normal;
+    color:#43302e;
+}
+
+
+.radio-group input{
+    width:16px;
+    height:16px;
+    accent-color:#43302e;
+}
+
+
+
+/* ปุ่ม */
+button{
+    padding:12px 30px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:25px;
+    margin-right:10px;
+    transition:0.3s;
+}
+
+
+
+/* ปุ่มส่ง */
+button[type="submit"]{
+    background:#43302e;
+    color:#FFF1B5;
+}
+
+
+button[type="submit"]:hover{
+    background:#5a403c;
+    transform:translateY(-2px);
+}
+
+
+
+/* ปุ่มล้าง */
+button[type="reset"]{
+    background:#C1DBE8;
+    color:#43302e;
+}
+
+
+button[type="reset"]:hover{
+    background:#a9ccdd;
+    transform:translateY(-2px);
+}

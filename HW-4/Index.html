@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครนักศึกษาใหม่</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>แบบฟอร์มสมัครนักศึกษาใหม่</h1>
+
+    <form>
+
+            <h2>ข้อมูลส่วนตัว</h2>
+            <label>คำนำหน้า</label>
+            <div class="radio-group">
+                <label><input type="radio" name="prefix" value="นาย" required> นาย</label>
+                <label><input type="radio" name="prefix" value="นางสาว"> นางสาว</label>
+            </div>
+
+            <label>ชื่อ</label>
+            <input type="text" placeholder="กรอกชื่อ" required>
+
+            <label>นามสกุล</label>
+            <input type="text" placeholder="กรอกนามสกุล">
+
+            <label>เพศ</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender"> ชาย</label>
+                <label><input type="radio" name="gender"> หญิง</label>
+            </div>
+
+            <label>วันเกิด</label>
+            <input type="date">
+
+            <label>อีเมล</label>
+            <input type="email" placeholder="กรอกอีเมล" required>
+
+            <label>เบอร์โทรศัพท์</label>
+            <input type="tel" id="เบอร์มือถือ" name="เบอร์มือถือ" required maxlength="10" pattern="[0-9]{10}"><br>
+
+        
+            <div class="radio-group">
+
+    <label>
+        <input type="radio" name="course" value="IT">
+        IT  
+    </label>
+
+    <label>
+        <input type="radio" name="course" value="ITI">
+        ITI
+    </label>
+
+    <label>
+        <input type="radio" name="course" value="ITT">
+        ITT
+    </label>
+
+    <label>
+        <input type="radio" name="course" value="INE">
+        INE
+    </label>
+
+    <label>
+        <input type="radio" name="course" value="INET">
+        INET
+    </label>
+
+</div>
+
+
+            <label>น้ำหนัก (กก.)</label>
+            <input type="number" min="20" max="200">
+
+            <label>ส่วนสูง (ซม.)</label>
+            <input type="number" min="100" max="200">
+
+            <label>อัปโหลดรูปภาพ</label>
+            <input type="file" accept="image/*">
+
+            <label>ที่อยู่</label>
+            <textarea rows="4"></textarea>
+
+            <label>เหตุผลที่สมัคร</label>
+            <textarea rows="4"></textarea>
+
+        </fieldset>
+
+        <button type="submit">สมัครเรียน</button>
+        <button type="reset">ล้างข้อมูล</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
